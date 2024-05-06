@@ -73,9 +73,9 @@ export default class FileUpload extends React.Component<IFileUploadProps, IFileU
                 <input className="form-control" type="file" id="formFile" onChange={this.handleFileChange.bind(this)}/>
             </div>
             <div className="mt-4">
-                <button type="button" className="btn btn-primary" onClick={this.handleSubmit}>Submit</button>
+                <button type="button" className="btn btn-primary" onClick={this.handleSubmit.bind(this)}>Submit</button>
             </div>
           </div>
         );
-      }
+    }
 }
